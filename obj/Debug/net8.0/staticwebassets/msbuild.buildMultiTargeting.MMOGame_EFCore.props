@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\MMOGame_EFCore.props" />
+</Project>

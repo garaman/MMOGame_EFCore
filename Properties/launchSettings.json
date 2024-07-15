@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "MMOGame_EFCore": {
+      "commandName": "Project",
+      "launchBrowser": false,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:6300;http://localhost:6301"
+    }
+  }
+}
