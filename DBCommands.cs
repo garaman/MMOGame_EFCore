@@ -65,6 +65,23 @@ namespace MMOGame_EFCore
             db.SaveChanges();
         }
 
+        // Update 3단계
+        // 1) Tracked Entity를 얻어온다.
+        // 2) Entity 클래스의 property를 변경(set)
+        // 3) SaveChangs 호출.
+
+        public static void UpdateTest()
+        {
+            using(AppDBContext db = new AppDBContext())
+            {
+                var guild = db.Guilds.Single(g => g.GuildName == "자연");
+
+                guild.GuildName = "자연별곡";
+
+                db.SaveChanges(); 
+            }
+        }
+
         public static void EagerLoading()
         {
             Console.WriteLine("길드 이름을 입력하세요");
@@ -114,14 +131,10 @@ namespace MMOGame_EFCore
             using (var db = new AppDBContext())
             {
                 var info = db.Guilds.Where(g => g.GuildName == name)
-                    .Select(g => new 
-                    { 
-                        Name = g.GuildName,
-                        MenberCount = g.Members.Count
-                    })
+                    .MapGuildToDto()
                     .First();
 
-                Console.WriteLine($"GuildName({info.Name}) / MenberCount({info.MenberCount})");
+                Console.WriteLine($"GuildName({info.Name}) / MenberCount({info.MemberCount})");
             }
         }
 
