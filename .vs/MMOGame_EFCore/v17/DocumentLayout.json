@@ -3,24 +3,27 @@
   "WorkspaceRootPath": "E:\\Programming\\MMOGame_EFCore\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{401D06F1-3D8A-4295-85D0-B9DC9D944403}|MMOGame_EFCore.csproj|e:\\programming\\mmogame_efcore\\dbcommands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{401D06F1-3D8A-4295-85D0-B9DC9D944403}|MMOGame_EFCore.csproj|solutionrelative:dbcommands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{401D06F1-3D8A-4295-85D0-B9DC9D944403}|MMOGame_EFCore.csproj|e:\\programming\\mmogame_efcore\\datamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{401D06F1-3D8A-4295-85D0-B9DC9D944403}|MMOGame_EFCore.csproj|solutionrelative:datamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Programming\\\uC608\uC81C\uBAA8\uC74C\\Entity Class \u0026 Table Mapping_\uC18C\uC2A4\uCF54\uB4DC\\MMO_EFCore\\DataModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{401D06F1-3D8A-4295-85D0-B9DC9D944403}|MMOGame_EFCore.csproj|e:\\programming\\mmogame_efcore\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{401D06F1-3D8A-4295-85D0-B9DC9D944403}|MMOGame_EFCore.csproj|solutionrelative:appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{401D06F1-3D8A-4295-85D0-B9DC9D944403}|MMOGame_EFCore.csproj|e:\\programming\\mmogame_efcore\\extensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{401D06F1-3D8A-4295-85D0-B9DC9D944403}|MMOGame_EFCore.csproj|solutionrelative:extensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{401D06F1-3D8A-4295-85D0-B9DC9D944403}|MMOGame_EFCore.csproj|e:\\programming\\mmogame_efcore\\datamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{401D06F1-3D8A-4295-85D0-B9DC9D944403}|MMOGame_EFCore.csproj|solutionrelative:datamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{401D06F1-3D8A-4295-85D0-B9DC9D944403}|MMOGame_EFCore.csproj|e:\\programming\\mmogame_efcore\\dbcommands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{401D06F1-3D8A-4295-85D0-B9DC9D944403}|MMOGame_EFCore.csproj|solutionrelative:dbcommands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{401D06F1-3D8A-4295-85D0-B9DC9D944403}|MMOGame_EFCore.csproj|e:\\programming\\mmogame_efcore\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{401D06F1-3D8A-4295-85D0-B9DC9D944403}|MMOGame_EFCore.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{401D06F1-3D8A-4295-85D0-B9DC9D944403}|MMOGame_EFCore.csproj|e:\\programming\\mmogame_efcore\\extensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{401D06F1-3D8A-4295-85D0-B9DC9D944403}|MMOGame_EFCore.csproj|solutionrelative:extensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,11 +33,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 182,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
+              "Title": "DataModel.cs",
+              "DocumentMoniker": "E:\\Programming\\\uC608\uC81C\uBAA8\uC74C\\Entity Class \u0026 Table Mapping_\uC18C\uC2A4\uCF54\uB4DC\\MMO_EFCore\\DataModel.cs",
+              "RelativeDocumentMoniker": "..\\\uC608\uC81C\uBAA8\uC74C\\Entity Class \u0026 Table Mapping_\uC18C\uC2A4\uCF54\uB4DC\\MMO_EFCore\\DataModel.cs",
+              "ToolTip": "E:\\Programming\\\uC608\uC81C\uBAA8\uC74C\\Entity Class \u0026 Table Mapping_\uC18C\uC2A4\uCF54\uB4DC\\MMO_EFCore\\DataModel.cs",
+              "RelativeToolTip": "..\\\uC608\uC81C\uBAA8\uC74C\\Entity Class \u0026 Table Mapping_\uC18C\uC2A4\uCF54\uB4DC\\MMO_EFCore\\DataModel.cs",
+              "ViewState": "AQIAADwAAAAAAAAAAAAAAFIAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-19T13:07:50.962Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Extensions.cs",
               "DocumentMoniker": "E:\\Programming\\MMOGame_EFCore\\Extensions.cs",
               "RelativeDocumentMoniker": "Extensions.cs",
@@ -47,26 +63,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "AppDBContext.cs",
               "DocumentMoniker": "E:\\Programming\\MMOGame_EFCore\\AppDBContext.cs",
               "RelativeDocumentMoniker": "AppDBContext.cs",
               "ToolTip": "E:\\Programming\\MMOGame_EFCore\\AppDBContext.cs",
               "RelativeToolTip": "AppDBContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAIAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAABFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-15T02:00:07.699Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "DataModel.cs",
               "DocumentMoniker": "E:\\Programming\\MMOGame_EFCore\\DataModel.cs",
               "RelativeDocumentMoniker": "DataModel.cs",
               "ToolTip": "E:\\Programming\\MMOGame_EFCore\\DataModel.cs",
               "RelativeToolTip": "DataModel.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAIwCMAAAAhAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-15T01:56:13.703Z",
               "EditorCaption": ""
@@ -79,19 +95,20 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "E:\\Programming\\MMOGame_EFCore\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAA0AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-15T01:53:35.455Z"
+              "WhenOpened": "2024-07-15T01:53:35.455Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "DBCommands.cs",
               "DocumentMoniker": "E:\\Programming\\MMOGame_EFCore\\DBCommands.cs",
               "RelativeDocumentMoniker": "DBCommands.cs",
               "ToolTip": "E:\\Programming\\MMOGame_EFCore\\DBCommands.cs",
               "RelativeToolTip": "DBCommands.cs",
-              "ViewState": "AQIAADgAAAAAAAAAAADwv1EAAAANAAAA",
+              "ViewState": "AQIAAEgAAAAAAAAAAAAwwFwAAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-15T06:20:00.62Z",
               "EditorCaption": ""

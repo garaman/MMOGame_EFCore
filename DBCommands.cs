@@ -82,61 +82,42 @@ namespace MMOGame_EFCore
             }
         }
 
-        public static void EagerLoading()
+        public static void ShowItems()
         {
-            Console.WriteLine("길드 이름을 입력하세요");
-            Console.WriteLine("> ");
-            string name = Console.ReadLine();
-
-            using (var db = new AppDBContext())
+            using (AppDBContext db = new AppDBContext())
             {
-                Guild guild = db.Guilds.AsNoTracking().Where(g => g.GuildName == name).Include(g => g.Members).ThenInclude(p => p.Item).First();
-                foreach (Player player in guild.Members)
+                foreach(var item in db.Items.Include(i=>i.Owner).ToList())
                 {
-                    Console.WriteLine($"TemplateId({player.Item.TemplateId}) / Owner({player.Name})");
+                    if(item.SoftDeleted == false)
+                    {
+                        Console.WriteLine($"DELETED - ItemId({item.ItemId}), TemplateId({item.TemplateId}) , Owner(0)");
+                    }
+                    else
+                    {
+                        if (item.Owner == null)
+                        {
+                            Console.WriteLine($"ItemId({item.ItemId}), TemplateId({item.TemplateId}) , Owner(0)");
+                        }
+                        else
+                        {
+                            Console.WriteLine($"ItemId({item.ItemId}), TemplateId({item.TemplateId}) , OwnerId({item.Owner.PlayerId}), Owner({item.Owner.Name})");
+                        }
+                    }
+                   
                 }
             }
         }
 
-        public static void ExplicitLoading()
+        public static void ShowGuild()
         {
-            Console.WriteLine("길드 이름을 입력하세요");
-            Console.WriteLine("> ");
-            string name = Console.ReadLine();
-
-            using (var db = new AppDBContext())
+            using (AppDBContext db = new AppDBContext())
             {
-                Guild guild = db.Guilds.Where(g => g.GuildName == name).First();
-
-                // 명시적
-                db.Entry(guild).Collection(g => g.Members).Load();
-                foreach (Player player in guild.Members)
-                {
-                    db.Entry(player).Reference(p => p.Item).Load();
-                }
-
-                foreach (Player player in guild.Members)
-                {
-                    Console.WriteLine($"TemplateId({player.Item.TemplateId}) / Owner({player.Name})");
+                foreach (var guild in db.Guilds.Include(g => g.Members).ToList())
+                {                    
+                    Console.WriteLine($"GuildId({guild.GuildId}), GuildName({guild.GuildName}) , MembersCount({guild.Members.Count})");
                 }
             }
         }
-
-        public static void SelectLoading()
-        {
-            Console.WriteLine("길드 이름을 입력하세요");
-            Console.WriteLine("> ");
-            string name = Console.ReadLine();
-
-            using (var db = new AppDBContext())
-            {
-                var info = db.Guilds.Where(g => g.GuildName == name)
-                    .MapGuildToDto()
-                    .First();
-
-                Console.WriteLine($"GuildName({info.Name}) / MenberCount({info.MemberCount})");
-            }
-        }
-
+ 
     }
 }

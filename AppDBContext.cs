@@ -14,5 +14,10 @@ namespace MMOGame_EFCore
         {
             options.UseSqlServer(ConnectionString);
         }
+
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+            builder.Entity<Item>().HasQueryFilter(i => i.SoftDeleted == false);
+        }
     }
 }

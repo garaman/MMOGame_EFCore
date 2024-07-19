@@ -10,27 +10,26 @@ namespace MMOGame_EFCore
             // CRUD (Create-Read-Update-Delete)
             Console.WriteLine("명령어를 입력하세요");
             Console.WriteLine("[0] Force Reset");
-            Console.WriteLine("[1] Eager Loading");            
-            Console.WriteLine("[2] Explicit Loading");            
-            Console.WriteLine("[3] Select Loading");
+            Console.WriteLine("[1] Update_1v1");            
+            Console.WriteLine("[2] Update_1vM");            
+            //Console.WriteLine("[3] Select Loading");
 
             while (true)
             {
-                Console.WriteLine("> ");
-                string command  =Console.ReadLine();
+                Console.Write("> ");
+                string command  = Console.ReadLine();
                 switch (command)
                 {
                     case "0":
                         DBCommands.InitializeDB(forceReset: true);
                         break;
                     case "1":
-                        DBCommands.EagerLoading();
+                        DBCommands.Update_1v1();
                         break;
                     case "2":
-                        DBCommands.ExplicitLoading();
+                        DBCommands.Update_1vM();
                         break;
-                    case "3":
-                        DBCommands.SelectLoading();
+                    case "3":                        
                         break;
                 }
             }

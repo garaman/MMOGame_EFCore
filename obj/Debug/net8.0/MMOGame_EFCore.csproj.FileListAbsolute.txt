@@ -63,3 +63,4 @@ E:\Programming\MMOGame_EFCore\obj\Debug\net8.0\MMOGame_EFCore.genruntimeconfig.c
 E:\Programming\MMOGame_EFCore\obj\Debug\net8.0\ref\MMOGame_EFCore.dll
 E:\Programming\MMOGame_EFCore\bin\Debug\net8.0\appsettings.Development.json
 E:\Programming\MMOGame_EFCore\bin\Debug\net8.0\appsettings.json
+E:\Programming\MMOGame_EFCore\obj\Debug\net8.0\MMOGame_EFCore.sourcelink.json

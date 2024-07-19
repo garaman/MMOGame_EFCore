@@ -2,16 +2,21 @@
 
 namespace MMOGame_EFCore
 {
+    //
+
     // Entity 클래스
     [Table("Item")]
     public class Item
     {
+        public bool? SoftDeleted { get; set; }
+
         public int ItemId { get; set; }
         public int TemplateId { get; set; }
         public DateTime CreateTime { get; set; }
 
         // 다른 클래스 참조 -> FK (Navigational Property)
-        [ForeignKey("OwnerId")]
+        //[ForeignKey("OwnerId")]
+        public int? OwnerId { get; set; }
         public Player Owner { get; set; }        
     }
 
