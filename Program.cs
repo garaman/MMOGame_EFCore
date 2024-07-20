@@ -1,19 +1,24 @@
 
+using Microsoft.EntityFrameworkCore;
+
 namespace MMOGame_EFCore
 {
     public class Program
     {
+
         public static void Main(string[] args)
         {
-            DBCommands.InitializeDB(forceReset: false);
-
+            //DBCommands.InitializeDB(forceReset: false);
+            
+            /*
             // CRUD (Create-Read-Update-Delete)
             Console.WriteLine("명령어를 입력하세요");
             Console.WriteLine("[0] Force Reset");
-            Console.WriteLine("[1] Update_1v1");            
-            Console.WriteLine("[2] Update_1vM");            
+            Console.WriteLine("[1] ShowItems");            
+            //Console.WriteLine("[2] CalcAverage");            
             //Console.WriteLine("[3] Select Loading");
 
+            
             while (true)
             {
                 Console.Write("> ");
@@ -24,15 +29,15 @@ namespace MMOGame_EFCore
                         DBCommands.InitializeDB(forceReset: true);
                         break;
                     case "1":
-                        DBCommands.Update_1v1();
+                        DBCommands.ShowItems();
                         break;
-                    case "2":
-                        DBCommands.Update_1vM();
+                    case "2":                        
                         break;
                     case "3":                        
                         break;
                 }
             }
+            */
         }
     }
 }

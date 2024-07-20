@@ -20,6 +20,23 @@ namespace MMOGame_EFCore
                 db.Database.EnsureDeleted();
                 db.Database.EnsureCreated();
 
+                /*
+                string command =
+                    @"  CREATE FUNCTION GetAverageReviewScore (@itemId INT) RETURNS FLOAT
+                        AS
+                        BEGIN
+                        DECLARE @result AS FLOAT
+
+                        SELECT @result = AVG(CAST([Score] AS FLOAT))
+                        FROM ItemReview AS r
+                        WHERE @itemId = r.ItemId
+
+                        RETURN @result
+                        END";
+
+                db.Database.ExecuteSqlRaw(command);
+                */
+
                 CreateTestData(db);
                 Console.WriteLine("DB Initialized");
             }
@@ -44,7 +61,7 @@ namespace MMOGame_EFCore
                 {
                     TemplateId = 102,
                     CreateTime = DateTime.Now,
-                    Owner = Gang
+                    Owner = Gang                    
                 },
                 new Item()
                 {
@@ -70,40 +87,27 @@ namespace MMOGame_EFCore
         // 2) Entity 클래스의 property를 변경(set)
         // 3) SaveChangs 호출.
 
-        public static void UpdateTest()
-        {
-            using(AppDBContext db = new AppDBContext())
-            {
-                var guild = db.Guilds.Single(g => g.GuildName == "자연");
-
-                guild.GuildName = "자연별곡";
-
-                db.SaveChanges(); 
-            }
-        }
-
         public static void ShowItems()
         {
             using (AppDBContext db = new AppDBContext())
-            {
-                foreach(var item in db.Items.Include(i=>i.Owner).ToList())
+            {                
+                foreach (var item in db.Items.Include(i => i.Owner).IgnoreQueryFilters().ToList())
                 {
-                    if(item.SoftDeleted == false)
+                    if (item.SoftDeleted)
                     {
-                        Console.WriteLine($"DELETED - ItemId({item.ItemId}), TemplateId({item.TemplateId}) , Owner(0)");
+                        Console.WriteLine($"DELETED - ItemId({item.ItemId}) TemplateId({item.TemplateId})");
                     }
                     else
-                    {
+                    {   
                         if (item.Owner == null)
                         {
-                            Console.WriteLine($"ItemId({item.ItemId}), TemplateId({item.TemplateId}) , Owner(0)");
+                            Console.WriteLine($"ItemId({item.ItemId}) TemplateId({item.TemplateId}) Owner(0)");
                         }
                         else
                         {
-                            Console.WriteLine($"ItemId({item.ItemId}), TemplateId({item.TemplateId}) , OwnerId({item.Owner.PlayerId}), Owner({item.Owner.Name})");
-                        }
+                            Console.WriteLine($"ItemId({item.ItemId}) TemplateId({item.TemplateId}) OwnerId({item.Owner.PlayerId}) Owner({item.Owner.Name})");
+                        }   
                     }
-                   
                 }
             }
         }
@@ -113,11 +117,11 @@ namespace MMOGame_EFCore
             using (AppDBContext db = new AppDBContext())
             {
                 foreach (var guild in db.Guilds.Include(g => g.Members).ToList())
-                {                    
-                    Console.WriteLine($"GuildId({guild.GuildId}), GuildName({guild.GuildName}) , MembersCount({guild.Members.Count})");
+                {
+                    Console.WriteLine($"GuildId({guild.GuildId}) GuildName({guild.GuildName}) MemberCount({guild.Members.Count})");
                 }
             }
         }
- 
+
     }
 }
