@@ -8,14 +8,14 @@ namespace MMOGame_EFCore
 
         public static void Main(string[] args)
         {
-            //DBCommands.InitializeDB(forceReset: false);
+            DBCommands.InitializeDB(forceReset: false);
             
-            /*
+           
             // CRUD (Create-Read-Update-Delete)
             Console.WriteLine("명령어를 입력하세요");
             Console.WriteLine("[0] Force Reset");
             Console.WriteLine("[1] ShowItems");            
-            //Console.WriteLine("[2] CalcAverage");            
+            Console.WriteLine("[2] TestUpdateAttach");            
             //Console.WriteLine("[3] Select Loading");
 
             
@@ -31,13 +31,14 @@ namespace MMOGame_EFCore
                     case "1":
                         DBCommands.ShowItems();
                         break;
-                    case "2":                        
+                    case "2":
+                        DBCommands.TestUpdateAttach();
                         break;
                     case "3":                        
                         break;
                 }
             }
-            */
+            
         }
     }
 }

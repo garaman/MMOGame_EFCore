@@ -29,7 +29,7 @@ namespace MMOGame_EFCore
         [MaxLength(20)]
         public string Name { get; set; }
 
-        public Item Item { get; set; }
+        public Item OwnedItem { get; set; }
         public Guild Guild { get; set; }
     }
 

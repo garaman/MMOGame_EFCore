@@ -56,18 +56,6 @@ namespace MMOGame_EFCore
                     TemplateId = 101,
                     CreateTime = DateTime.Now,
                     Owner = Bada
-                },
-                new Item()
-                {
-                    TemplateId = 102,
-                    CreateTime = DateTime.Now,
-                    Owner = Gang                    
-                },
-                new Item()
-                {
-                    TemplateId = 103,
-                    CreateTime = DateTime.Now,
-                    Owner = San
                 }
             };
 
@@ -79,6 +67,7 @@ namespace MMOGame_EFCore
 
             db.Items.AddRange(items);
             db.Guilds.AddRange(guild);
+
             db.SaveChanges();
         }
 
@@ -123,5 +112,49 @@ namespace MMOGame_EFCore
             }
         }
 
+        public static void TestUpdateAttach()
+        {
+            using (AppDBContext db = new AppDBContext())
+            {
+                { 
+                    Player p = new Player() { Name = "StateTest"};
+                    db.Entry(p).State = EntityState.Added;
+
+                    db.SaveChanges();
+                }
+
+                {
+                    Player p = new Player() 
+                    { 
+                        PlayerId = 3,
+                        Name = "San_Se" 
+                    };
+
+                    p.OwnedItem = new Item() { TemplateId = 777 };
+                    p.Guild = new Guild() { GuildName = "TrackGraph" };
+
+                    db.ChangeTracker.TrackGraph(p, e =>
+                    {
+                        if (e.Entry.Entity is Player)
+                        {
+                            e.Entry.State = EntityState.Unchanged;
+                            e.Entry.Property("Name").IsModified = true;
+                        }
+                        else if (e.Entry.Entity is Guild)
+                        {
+                            e.Entry.State = EntityState.Unchanged;
+                        }
+                        else if (e.Entry.Entity is Item)
+                        {
+                            e.Entry.State = EntityState.Unchanged;
+                        }
+                    });
+
+                    db.SaveChanges();
+                }
+
+
+            }
+        }
     }
 }

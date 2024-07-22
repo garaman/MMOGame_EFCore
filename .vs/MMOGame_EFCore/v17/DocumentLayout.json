@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "E:\\Programming\\MMOGame_EFCore\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{401D06F1-3D8A-4295-85D0-B9DC9D944403}|MMOGame_EFCore.csproj|e:\\programming\\mmogame_efcore\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{401D06F1-3D8A-4295-85D0-B9DC9D944403}|MMOGame_EFCore.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{401D06F1-3D8A-4295-85D0-B9DC9D944403}|MMOGame_EFCore.csproj|e:\\programming\\mmogame_efcore\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{401D06F1-3D8A-4295-85D0-B9DC9D944403}|MMOGame_EFCore.csproj|solutionrelative:appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{401D06F1-3D8A-4295-85D0-B9DC9D944403}|MMOGame_EFCore.csproj|e:\\programming\\mmogame_efcore\\datamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -15,8 +15,8 @@
       "RelativeMoniker": "D:0:0:{401D06F1-3D8A-4295-85D0-B9DC9D944403}|MMOGame_EFCore.csproj|solutionrelative:dbcommands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{401D06F1-3D8A-4295-85D0-B9DC9D944403}|MMOGame_EFCore.csproj|e:\\programming\\mmogame_efcore\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{401D06F1-3D8A-4295-85D0-B9DC9D944403}|MMOGame_EFCore.csproj|solutionrelative:appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{401D06F1-3D8A-4295-85D0-B9DC9D944403}|MMOGame_EFCore.csproj|e:\\programming\\mmogame_efcore\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{401D06F1-3D8A-4295-85D0-B9DC9D944403}|MMOGame_EFCore.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,17 +26,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 182,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\Programming\\MMOGame_EFCore\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "E:\\Programming\\MMOGame_EFCore\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAkAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAACIAAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-15T01:53:35.455Z",
               "EditorCaption": ""
@@ -49,20 +49,20 @@
               "RelativeDocumentMoniker": "DataModel.cs",
               "ToolTip": "E:\\Programming\\MMOGame_EFCore\\DataModel.cs",
               "RelativeToolTip": "DataModel.cs",
-              "ViewState": "AQIAACwAAAAAAAAAAADwvzMAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-20T02:32:19.893Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "AppDBContext.cs",
               "DocumentMoniker": "E:\\Programming\\MMOGame_EFCore\\AppDBContext.cs",
               "RelativeDocumentMoniker": "AppDBContext.cs",
               "ToolTip": "E:\\Programming\\MMOGame_EFCore\\AppDBContext.cs",
               "RelativeToolTip": "AppDBContext.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAxwCYAAAAAAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAACQAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-15T02:00:07.699Z",
               "EditorCaption": ""
@@ -75,7 +75,7 @@
               "RelativeDocumentMoniker": "DBCommands.cs",
               "ToolTip": "E:\\Programming\\MMOGame_EFCore\\DBCommands.cs",
               "RelativeToolTip": "DBCommands.cs",
-              "ViewState": "AQIAADAAAAAAAAAAAAAIwHwAAAAAAAAA",
+              "ViewState": "AQIAAHEAAAAAAAAAAADwv5QAAABCAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-15T06:20:00.62Z",
               "EditorCaption": ""

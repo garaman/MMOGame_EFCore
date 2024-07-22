@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MMOGame_EFCore")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+92efcefa0e6b951cdbec3f4bf5c116dbe12da1e4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+11fe7ba85c35a47826828d9d7704e5b13a4746ad")]
 [assembly: System.Reflection.AssemblyProductAttribute("MMOGame_EFCore")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MMOGame_EFCore")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
